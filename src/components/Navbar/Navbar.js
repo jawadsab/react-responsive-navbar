@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MenuItems } from "./MenuItems";
 import "./Navbar.css";
+import { Button } from "../Button";
 
 const Navbar = () => {
   const [mobileView, setMobileView] = useState(false);
@@ -26,6 +27,7 @@ const Navbar = () => {
           );
         })}
       </ul>
+      <Button>Sign Up</Button>
     </nav>
   );
 };
